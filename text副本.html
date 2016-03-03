@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>任务管理</title>
+    <link rel="stylesheet" href="my.css">
+    <link rel="stylesheet" href="./css/istyle.css">
+    <link rel="stylesheet" href="./css/my.css">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs
+/jquery/1.4.0/jquery.min.js"></script>
+
+</head>
+<body>
+
+    <div class="row-fluid">
+    <div class="span12-top">
+        <div class="span10" style="margin-top: 10px">
+            <span class="text-title">任务发布及管理系统</span>
+    </div>
+ <!--        <div class="offset2" style="margin-top: 10px">
+            <span class="text-right">[登录]</span>
+        </div> -->
+    </div>
+    </div>
+    <div class="row-fluid">
+        <div class="span2" style="top: 36px;height: 1000px;box-shadow: 2px 0 0px #9c9c9c;background: #fff;">
+            <ul class="ul-top">
+                <li>
+                    <p>
+                        <a href="text.html"><span>任务管理</span></a>
+                    </p>
+                </li>
+            </ul>
+            <ul class="ul-center">
+                <li>
+                    <p>
+                        <a href="http://ele.me">期待中...</span></a>
+                    </p>
+                </li>
+            </ul>
+          <!--   <ul class="ul-center">
+                <li>
+                    <p>
+                        <a href="creatprod.html"><span>模板类</span></a>
+                    </p>
+                </li>
+            </ul>
+            <ul class="ul-center">
+                <li>
+                    <p>
+                        <a href="#"><span onclick="creatmodule()">项目类</span></a>
+                    </p>
+                </li>
+            </ul> -->
+        </div>
+<div id="show1" class="span10" style="top: 36px;height: 1000px">
+            <div class="container-fluid">
+                <div class="row-fluid">
+                    <div class="span12" style="margin: 5px">
+                        <!--<h1 class="text-info">Alerting Tools</h1>-->
+                    </div>
+                    <div class="span12">
+                        <div class="row-fluid">
+                            <div class="span1" style="padding-top: 5px">
+                                任务名称：
+                            </div>
+                            <div class="span3">
+                                <input type="text" id="d_name" maxlength="80" align="left">
+                            </div>
+                            <div class="span1" style="padding-top: 5px">
+                                认领人员：
+                            </div>
+                            <div class="span3">
+                                <input type="text" id="d_owner" maxlength="30">
+                            </div>
+                            <div class="span1">
+                                <button class="btn btn-primary" onclick="searchtasks()">查询</button>
+                            </div>
+                            <div class="span1">
+                                <button class="btn btn-primary" onclick="newmission()">新建任务</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="span12"></div>
+            <div class="container-fluid">
+                <table id="tab1" class="table table-bordered table-hover table-striped" >
+                    <thead>
+                     <tr>
+                     <th width="100px">任务编号</th>
+                     <th width="150px">任务名称</th>
+                     <th width="150px">任务等级</th>
+                     <th width="150px">任务类型</th>
+                     <th width="150px">开始时间</th>
+                     <th width="150px">结束时间</th>
+                     <th width="150px">认领人</th>
+                     <th width="100px">操作</th>
+                     </tr>
+                    </thead>
+                    <tbody style="height: 1000px"></tbody>
+                </table>
+                <div id="divpage"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script  src="only1.js"> </script>
+</body>
+</html>
