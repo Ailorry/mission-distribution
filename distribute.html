@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>任务认领</title>
+    <link rel="stylesheet" href="my.css">
+</head>
+<body>
+ <hidden id=""/>  
+       <!--  <div class="row-fluid">
+            <div class="span12" style="margin: 5px">
+                <h2 class="text-info">
+                    认领任务
+                </h2>
+                
+                <hr width="100%" style="margin-top:-5px;border:1px solid #ececec;"/>
+                <div class="span12">
+
+        </div> -->
+<br>
+<br>
+ <form action="http://172.16.24.31:8018/updatetask" method="post" name="form1">
+  <div>
+    认领人:
+    <input type="text" id="executor" maxlength="80" align="left">
+  </div>
+  <br>
+  <br>
+  <br>
+  <div>
+	<button type="button" onclick="savemission()">确认</button>
+  </div>
+ </form>
+
+<script type="text/javascript" src="only1.js"></script>
+</body>
+</html>
